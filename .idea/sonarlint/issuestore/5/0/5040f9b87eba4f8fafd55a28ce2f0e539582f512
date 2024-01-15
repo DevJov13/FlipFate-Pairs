@@ -1,0 +1,10 @@
+
+[
+java:S3516."9Refactor this method to not always return the same value.(¸ÄÉˆüÿÿÿÿ8ÚÖÏ“Ğ1
+x
+java:S1450"VRemove the "loadUrl" field and declare it as a local variable in the relevant methods.(ğØ²Œüÿÿÿÿ8¯æÎ“Ğ1
+X	java:S125#"<This block of commented-out lines of code should be removed.(èûßê8¿æÎ“Ğ1
+e
+java:S5361^"HReplace this call to "replaceAll()" by a call to the "replace()" method.(…õú8ãæÎ“Ğ1
+l
+java:S1874u"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(œƒƒ©ùÿÿÿÿ8ïæÎ“Ğ1

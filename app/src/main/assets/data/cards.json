@@ -1,0 +1,26 @@
+[
+    {
+        "image": "../assets/chili.png",
+        "name": "chili"
+    },
+    {
+        "image": "../assets/penguin2.png",
+        "name": "grapes"
+    },
+    {
+        "image": "../assets/rabbit.png",
+        "name": "lemon"
+    },
+    {
+        "image": "../assets/rabbit2.png",
+        "name": "orange"
+    },
+    {
+        "image": "../assets/rat.png",
+        "name": "pineapple"
+    },
+    {
+        "image": "../assets/tiger.png",
+        "name": "strawberry"
+    }
+]

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context=".Menu">
+
+    <VideoView
+        android:id="@+id/menuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="1dp"
+        />
+
+    <Button
+        android:id="@+id/StartGame"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#F40707"
+        android:text="START"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        android:elevation="2dp"
+        />
+
+    <Button
+        android:id="@+id/Policy"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#F40707"
+        android:text="POLICY"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartGame"
+        app:layout_constraintVertical_bias="0.0"
+        android:elevation="2dp"
+        />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#F40707"
+        android:elevation="2dp"
+        android:text="Exit"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Policy"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

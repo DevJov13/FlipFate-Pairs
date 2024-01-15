@@ -1,0 +1,23 @@
+
+M
+java:S1066¨"/Merge this if statement with the enclosing one.(şêÂ8Û¦Ã”Ğ1
+l	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8Û¦Ã”Ğ1
+l	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8Û¦Ã”Ğ1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õøáù8Ü¦Ã”Ğ1
+	java:S116$"dRename this field "REQUEST_CODE_FILE_CHOOSER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²®«t8¤§Ã”Ğ1
+=
+java:S1170$"!Make this final field static too.(²®«t8©§Ã”Ğ1
+S
+java:S1874U"6Remove this use of "getPackageInfo"; it is deprecated.(ËÑ¿ï8Ó§Ã”Ğ1
+e
+java:S5361h"HReplace this call to "replaceAll()" by a call to the "replace()" method.(…õú8Ö§Ã”Ğ1
+B
+java:S2129k" Remove this "String" constructor(ú±£©şÿÿÿÿ8ú§Ã”Ğ1
+\
+java:S1161~":Add the "@Override" annotation above this method signature(ÍÑËèûÿÿÿÿ8¨Ã”Ğ1
+a
+java:S1874Œ">Remove this use of "startActivityForResult"; it is deprecated.(úÌšúÿÿÿÿ8‚¨Ã”Ğ1
+m
+java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(œƒƒ©ùÿÿÿÿ8ƒ¨Ã”Ğ1
+h
+java:S1874¢"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8†¨Ã”Ğ1

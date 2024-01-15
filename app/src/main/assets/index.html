@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Match Frenzy</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="application/json" id="cardData">
+    {
+      "cards": [
+        {
+          "image": "assets/chili.png",
+          "name": "chili"
+        },
+        {
+          "image": "assets/penguin2.png",
+          "name": "grapes"
+        },
+        {
+          "image": "assets/rabbit.png",
+          "name": "lemon"
+        },
+        {
+          "image": "assets/rabbit2.png",
+          "name": "orange"
+        },
+        {
+          "image": "assets/rat.png",
+          "name": "pineapple"
+        },
+        {
+          "image": "assets/tiger.png",
+          "name": "strawberry"
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+
+  <audio id="flipSound" src="./sound/FlipBG.MP3" preload="auto"></audio>
+  <audio id="matchSound" src="./sound/Ting.MP3" preload="auto"></audio>
+
+  
+  <div class="grid-container">
+  </div>
+  <p>Turn: <span class="score"></span></p>
+  <div class="actions">
+    <button onclick="restart()" class="restart">RESTART</button>
+    <label class="switch">
+      <input class="cb toggle-button" type="checkbox" onclick="toggleMute()" />
+      <span class="toggle"> 
+        <span class="right">off</span>
+        <span class="left">on</span>
+      </span>
+    </label>
+  </div>
+  <div class="floating-message"></div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
