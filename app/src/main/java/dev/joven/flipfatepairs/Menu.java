@@ -33,7 +33,7 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Start the MainContent activity
-                Intent intent = new Intent(Menu.this, MainContent.class);
+                Intent intent = new Intent(Menu.this, Policy_Activity.class);
                 startActivity(intent);
             }
         });

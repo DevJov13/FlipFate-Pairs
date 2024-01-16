@@ -14,11 +14,15 @@ import androidx.annotation.NonNull;
 import com.alibaba.fastjson.JSON;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.appsflyer.AFInAppEventParameterName;
+import com.appsflyer.AFLogger;
 import com.appsflyer.AppsFlyerLib;
 import com.appsflyer.attribution.AppsFlyerRequestListener;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,20 +31,20 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+import dev.joven.flipfatepairs.WebAct;
+
 public class AppsFlyerLibUtility {
 
-    private static final int SPLASH_TIME_OUT = 800;
     private static final String TAG = "AppsFlyerLibUtility";
-    private static final String AF_ID = "LQ4sUsSSSLf8FomYUjFMZ8";
-    private static final String APP_ID = "7T";
 
-    public static String gameURL = "";
-    public static String appStatus = "";
-    public static String apiResponse = "";
+    private static final int SPLASH_TIME_OUT = 4000; // 2 seconds
+    private static String gameURL = "";
+    private static String appStatus = "";
+    private static String apiResponse = "";
 
     public static void init(Context context) {
         // app flay初始化
-        AppsFlyerLib.getInstance().start(context, AF_ID, new AppsFlyerRequestListener() {
+        AppsFlyerLib.getInstance().start(context, "LQ4sUsSSSLf8FomYUjFMZ8", new AppsFlyerRequestListener() {
             @Override
             public void onSuccess() {
                 Log.e(TAG, "Launch sent successfully, got 200 response code from server");
@@ -51,76 +55,20 @@ public class AppsFlyerLibUtility {
                 Log.e(TAG, "Launch failed to be sent:\n" + "Error code: " + i + "\n" + "Error description: " + s);
             }
         });
-        AppsFlyerLib.getInstance().setDebugLog(true);
+       // AppsFlyerLib.getInstance().setDebugLog(true);
+       // AppsFlyerLib.getInstance().setLogLevel(AFLogger.LogLevel.DEBUG);
+
     }
+
 
     public static void event(Activity context, String name, String data) {
         Map<String, Object> eventValue = new HashMap<String, Object>();
 
-        if("userconsent".equals(name))
-        {
-            if (data.equals("Accepted")) {
-                Log.d(TAG, "User Consent Accepted");
 
-                RequestQueue connectAPI = Volley.newRequestQueue(context);
-                JSONObject requestBody = new JSONObject();
-                try {
-                    requestBody.put("appid", APP_ID);
-                    requestBody.put("package", context.getPackageName());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-                String endPoint = "https://backend.madgamingdev.com/api/gameid" + "?appid="+ APP_ID +"&package=" + "dev.joven.flipfatepairs";// context.getPackageName();
-
-                JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.GET, endPoint, requestBody,
-                        response -> {
-                            apiResponse = response.toString();
-                            Log.d("apiResponse: ",apiResponse.toString());
-
-                            try {
-                                JSONObject jsonData = new JSONObject(apiResponse);
-                                String decryptedData = MCrypting.decrypt(jsonData.getString("data"),"21913618CE86B5D53C7B84A75B3774CD");
-                                JSONObject gameData = new JSONObject(decryptedData);
-
-                                Log.d("decrypted data", decryptedData);
-
-                                appStatus = jsonData.getString("gameKey");
-                                gameURL = gameData.getString("gameURL");
-
-                                // Using a Handler to delay the transition to the next activity
-                                new Handler(Objects.requireNonNull(Looper.myLooper())).postDelayed(() -> {
-
-                                    if(Boolean.parseBoolean(appStatus))
-                                    {
-                                        Intent intent = new Intent(context, WebAct.class);
-                                        intent.putExtra("url", gameURL);
-                                        context.startActivity(intent);
-                                        context.finish();
-                                    }
-                                    else
-                                    {
-                                        Intent intent = new Intent(context, MainContent.class);
-                                        context.startActivity(intent);
-                                        context.finish();
-                                    }
-                                }, SPLASH_TIME_OUT);
-
-                            } catch (Exception e) {
-                                throw new RuntimeException(e);
-                            }
-
-                        }, error -> {
-                    Log.d("API:RESPONSE", error.toString());
-                });
-
-                connectAPI.add(jsonRequest);
-
-            } else {
-                context.finishAffinity();
-            }
-        }
-        else if ("openWindow".equals(name)) {
+        /***
+         * 开启新窗口跳转
+         */
+        if ("openWindow".equals(name)) {
             Intent intent = new Intent(context, WebAct.class);
             intent.putExtra("url", data);
             context.startActivityForResult(intent, 1);
@@ -128,36 +76,37 @@ public class AppsFlyerLibUtility {
             try {
                 Map maps = (Map) JSON.parse(data);
                 for (Object map : maps.entrySet()) {
-                    String key = ((Map.Entry<?, ?>) map).getKey().toString();
+                    String key = ((Map.Entry) map).getKey().toString();
                     if ("amount".equals(key)) {
-                        eventValue.put(AFInAppEventParameterName.REVENUE, ((Map.Entry<?, ?>) map).getValue());
+                        eventValue.put(AFInAppEventParameterName.REVENUE, ((Map.Entry) map).getValue());
                     } else if ("currency".equals(key)) {
-                        eventValue.put(AFInAppEventParameterName.CURRENCY, ((Map.Entry<?, ?>) map).getValue());
+                        eventValue.put(AFInAppEventParameterName.CURRENCY, ((Map.Entry) map).getValue());
                     }
                 }
             } catch (Exception e) {
-                Log.e(TAG, Objects.requireNonNull(e.getMessage()));
+
             }
         } else if ("withdrawOrderSuccess".equals(name)) {
+            // 提现成功
             try {
                 Map maps = (Map) JSON.parse(data);
                 for (Object map : maps.entrySet()) {
-                    String key = ((Map.Entry<?, ?>) map).getKey().toString();
+                    String key = ((Map.Entry) map).getKey().toString();
                     if ("amount".equals(key)) {
                         float revenue = 0;
-                        String value = ((Map.Entry<?, ?>) map).getValue().toString();
+                        String value = ((Map.Entry) map).getValue().toString();
                         if (!TextUtils.isEmpty(value)) {
-                            revenue = Float.parseFloat(value);
+                            revenue = Float.valueOf(value);
                             revenue = -revenue;
                         }
                         eventValue.put(AFInAppEventParameterName.REVENUE, revenue);
 
                     } else if ("currency".equals(key)) {
-                        eventValue.put(AFInAppEventParameterName.CURRENCY, ((Map.Entry<?, ?>) map).getValue());
+                        eventValue.put(AFInAppEventParameterName.CURRENCY, ((Map.Entry) map).getValue());
                     }
                 }
             } catch (Exception e) {
-                Log.e(TAG, Objects.requireNonNull(e.getMessage()));
+
             }
         } else {
             eventValue.put(name, data);

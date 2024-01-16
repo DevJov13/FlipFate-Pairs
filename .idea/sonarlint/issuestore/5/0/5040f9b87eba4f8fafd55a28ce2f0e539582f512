@@ -1,10 +1,49 @@
 
+R
+java:S1066˜"/Merge this if statement with the enclosing one.(™ã†ãşÿÿÿÿ8Õ€ªŒÑ1
+l	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8×€ªŒÑ1
+l	java:S117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8×€ªŒÑ1
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ãö üÿÿÿÿ8×€ªŒÑ1
+J
+java:S1604N"(Make this anonymous inner class a lambda(Ö±õ÷üÿÿÿÿ8×€ªŒÑ1
+E
+java:S1604\"(Make this anonymous inner class a lambda(ÓçòÀ8×€ªŒÑ1
+E
+java:S1604i"(Make this anonymous inner class a lambda(ÓçòÀ8×€ªŒÑ1
+D
+java:S1604x"(Make this anonymous inner class a lambda(ıÙ58×€ªŒÑ1
+K
+java:S1604­"(Make this anonymous inner class a lambda(îÚ‰‡úÿÿÿÿ8×€ªŒÑ1
+K
+java:S1604 "(Make this anonymous inner class a lambda(í‹öøÿÿÿÿ8×€ªŒÑ1
 [
-java:S3516."9Refactor this method to not always return the same value.(¸ÄÉˆüÿÿÿÿ8ÚÖÏ“Ğ1
-x
-java:S1450"VRemove the "loadUrl" field and declare it as a local variable in the relevant methods.(ğØ²Œüÿÿÿÿ8¯æÎ“Ğ1
-X	java:S125#"<This block of commented-out lines of code should be removed.(èûßê8¿æÎ“Ğ1
-e
-java:S5361^"HReplace this call to "replaceAll()" by a call to the "replace()" method.(…õú8ãæÎ“Ğ1
-l
-java:S1874u"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(œƒƒ©ùÿÿÿÿ8ïæÎ“Ğ1
+java:S3516="9Refactor this method to not always return the same value.(¸ÄÉˆüÿÿÿÿ8±¬«ŒÑ1
+	java:S116'"dRename this field "REQUEST_CODE_FILE_CHOOSER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²®«t8“ªŒÑ1
+=
+java:S1170'"!Make this final field static too.(²®«t8“ªŒÑ1
+X	java:S1252"<This block of commented-out lines of code should be removed.(èûßê8œªŒÑ1
+g
+java:S1874K"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ï“À¯8§ªŒÑ1
+Y
+java:S1874L"7Remove this use of "onReceivedError"; it is deprecated.(àø’¶şÿÿÿÿ8¨ªŒÑ1
+X
+java:S1874“"5Remove this use of "SINGLE_COLUMN"; it is deprecated.(Ê»üíûÿÿÿÿ8»ªŒÑ1
+Y	java:S125š"<This block of commented-out lines of code should be removed.(ÌÂ ™8»ªŒÑ1
+f
+java:S5361›"HReplace this call to "replaceAll()" by a call to the "replace()" method.(…õú8»ªŒÑ1
+O
+java:S1172½"1Remove this unused method parameter "acceptType".(Øß¿×8ÀªŒÑ1
+a
+java:S1172É">Remove these unused method parameters "acceptType", "capture".(ÄÜ›ïûÿÿÿÿ8ÁªŒÑ1
+]
+java:S1161Ï":Add the "@Override" annotation above this method signature(ÍÑËèûÿÿÿÿ8ÂªŒÑ1
+T
+java:S1874Ü"6Remove this use of "getPackageInfo"; it is deprecated.(ËÑ¿ï8ÄªŒÑ1
+m
+java:S1874ø"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(œƒƒ©ùÿÿÿÿ8ÇªŒÑ1
+p
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ŸŒ¹Ñ8ÉªŒÑ1
+9
+java:S3626–"Remove this redundant jump.(ûÁİ…8ÊªŒÑ1
+¤
+java:S1186¢"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(º°Äÿÿÿÿÿ8ÌªŒÑ1

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -35,11 +36,15 @@ public class Policy_Activity extends AppCompatActivity {
     private ValueCallback<Uri[]> mUploadCallBackAboveL;
     private final  int REQUEST_CODE_FILE_CHOOSER = 888;
 
+    private SharedPreferences appPreferences;
+
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_policy);
+
+
         if (TextUtils.isEmpty(loadUrl)) {
             finish();
         }

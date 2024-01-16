@@ -1,29 +1,48 @@
 
-g	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ùã’ÚĞ1
-L
-java:S3740"/Provide the parametrized type for this generic.(×´°c8Ùã’ÚĞ1
-L
-java:S3740"/Provide the parametrized type for this generic.(×´°c8Ùã’ÚĞ1
+K
+java:S3740M"/Provide the parametrized type for this generic.(×´°c8µÁ©Ñ1
+K
+java:S3740\"/Provide the parametrized type for this generic.(×´°c8µÁ©Ñ1
 {
-java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆûÛÊûÿÿÿÿ8Ùã’ÚĞ1
-p
-java:S1104%"SMake gameURL a static final constant or non-public and provide accessors if needed.(çÇõò8ŠÓ™ÚĞ1
-w
-java:S1104&"UMake appStatus a static final constant or non-public and provide accessors if needed.(ıµ×¬ıÿÿÿÿ8ŠÓ™ÚĞ1
-y
-java:S1104'"WMake apiResponse a static final constant or non-public and provide accessors if needed.(¬Ææøûÿÿÿÿ8ŠÓ™ÚĞ1
-J
-java:S1444%"-Make this "public static gameURL" field final(çÇõò8ŠÓ™ÚĞ1
-Q
-java:S1444&"/Make this "public static appStatus" field final(ıµ×¬ıÿÿÿÿ8ŠÓ™ÚĞ1
-S
-java:S1444'"1Make this "public static apiResponse" field final(¬Ææøûÿÿÿÿ8ŠÓ™ÚĞ1
+java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆûÛÊûÿÿÿÿ8¶Á©Ñ1
 \
-java:S1118":Add a private constructor to hide the implicit public one.(ë¶‰—şÿÿÿÿ8ªÕ™ÚĞ1
+java:S1118$":Add a private constructor to hide the implicit public one.(ë¶‰—şÿÿÿÿ8ûÂ©Ñ1
+]	java:S125:"<This block of commented-out lines of code should be removed.(òšÏßúÿÿÿÿ8ÊÌ“Ñ1
 o
-java:S37769"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ÈÀ¥ğ8€ç’ÚĞ1
-X	java:S125J"<This block of commented-out lines of code should be removed.(Ëº½™8†ç’ÚĞ1
-p
-java:S1858O"N"apiResponse" is already a string, there's no need to call "toString()" on it.(•âË¡şÿÿÿÿ8’ç’ÚĞ1
-N
-java:S1602q",Remove useless curly braces around statement(ËÕ£Õúÿÿÿÿ8–ç’ÚĞ1
+java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÈÀ¥ğ8ŠÃ©Ñ1
+E	java:S108V")Either remove or fill this block of code.(”ı¾8šÄ©Ñ1
+E	java:S108l")Either remove or fill this block of code.(”ı¾8ŸÄ©Ñ1
+L
+java:S1128"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8 Ä©Ñ1
+J
+java:S1128".Remove this unused import 'android.os.Looper'.(âå8 Ä©Ñ1
+T
+java:S1128"7Remove this unused import 'com.android.volley.Request'.(Å½ä8óµ•Ñ1
+Y
+java:S1128"<Remove this unused import 'com.android.volley.RequestQueue'.(¹şÌ×8óµ•Ñ1
+U
+java:S1128"8Remove this unused import 'com.android.volley.Response'.(ˆïƒ 8óµ•Ñ1
+X
+java:S1128";Remove this unused import 'com.android.volley.VolleyError'.(­°Ñ”8ôµ•Ñ1
+f
+java:S1128"IRemove this unused import 'com.android.volley.toolbox.JsonObjectRequest'.(Ã¦¿¾8ôµ•Ñ1
+[
+java:S1128">Remove this unused import 'com.android.volley.toolbox.Volley'.(¢‰Ò¶8ôµ•Ñ1
+P
+java:S1128"3Remove this unused import 'com.appsflyer.AFLogger'.(ïóì8ŞÌ“Ñ1
+U
+java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8¡Ä©Ñ1
+R
+java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8¡Ä©Ñ1
+K
+java:S1128 ".Remove this unused import 'java.util.Objects'.(¼¸õ›8¡Ä©Ñ1
+q
+java:S1128""TRemove this unnecessary import: same package classes are always implicitly imported.(¬·ÌÃ8Ş©Ñ1
+U
+java:S1068("3Remove this unused "SPLASH_TIME_OUT" private field.(Ô±Ã¶ûÿÿÿÿ8¡Ä©Ñ1
+M
+java:S1068)"+Remove this unused "gameURL" private field.(ã•ùáúÿÿÿÿ8¡Ä©Ñ1
+J
+java:S1068*"-Remove this unused "appStatus" private field.(ˆ²Å„8£Ä©Ñ1
+Q
+java:S1068+"/Remove this unused "apiResponse" private field.(¦½è¹ÿÿÿÿÿ8£Ä©Ñ1

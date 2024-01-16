@@ -1,23 +1,25 @@
 
 M
-java:S1066¨"/Merge this if statement with the enclosing one.(şêÂ8Û¦Ã”Ğ1
-l	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8Û¦Ã”Ğ1
-l	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8Û¦Ã”Ğ1
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õøáù8Ü¦Ã”Ğ1
-	java:S116$"dRename this field "REQUEST_CODE_FILE_CHOOSER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²®«t8¤§Ã”Ğ1
+java:S1066­"/Merge this if statement with the enclosing one.(şêÂ8æÙâ‡Ñ1
+l	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8çÙâ‡Ñ1
+l	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÿïa8çÙâ‡Ñ1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õøáù8¸œÃ†Ñ1
+	java:S116%"dRename this field "REQUEST_CODE_FILE_CHOOSER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²®«t8ŞœÃ†Ñ1
 =
-java:S1170$"!Make this final field static too.(²®«t8©§Ã”Ğ1
+java:S1170%"!Make this final field static too.(²®«t8ãœÃ†Ñ1
 S
-java:S1874U"6Remove this use of "getPackageInfo"; it is deprecated.(ËÑ¿ï8Ó§Ã”Ğ1
+java:S1874Z"6Remove this use of "getPackageInfo"; it is deprecated.(ËÑ¿ï8ŸÚâ‡Ñ1
 e
-java:S5361h"HReplace this call to "replaceAll()" by a call to the "replace()" method.(…õú8Ö§Ã”Ğ1
+java:S5361m"HReplace this call to "replaceAll()" by a call to the "replace()" method.(…õú8£Úâ‡Ñ1
 B
-java:S2129k" Remove this "String" constructor(ú±£©şÿÿÿÿ8ú§Ã”Ğ1
-\
-java:S1161~":Add the "@Override" annotation above this method signature(ÍÑËèûÿÿÿÿ8¨Ã”Ğ1
+java:S2129p" Remove this "String" constructor(ú±£©şÿÿÿÿ8¦Úâ‡Ñ1
+]
+java:S1161ƒ":Add the "@Override" annotation above this method signature(ÍÑËèûÿÿÿÿ8¬Úâ‡Ñ1
 a
-java:S1874Œ">Remove this use of "startActivityForResult"; it is deprecated.(úÌšúÿÿÿÿ8‚¨Ã”Ğ1
+java:S1874‘">Remove this use of "startActivityForResult"; it is deprecated.(úÌšúÿÿÿÿ8®Úâ‡Ñ1
 m
-java:S1874"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(œƒƒ©ùÿÿÿÿ8ƒ¨Ã”Ğ1
+java:S1874”"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(œƒƒ©ùÿÿÿÿ8¯Úâ‡Ñ1
 h
-java:S1874¢"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8†¨Ã”Ğ1
+java:S1874§"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ8±Úâ‡Ñ1
+T
+java:S1068'"2Remove this unused "appPreferences" private field.(ç³üÿÿÿÿ8´Úâ‡Ñ1

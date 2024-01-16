@@ -1,0 +1,25 @@
+
+g	java:S112_"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8®î‹Ñ1
+e
+java:S1192I"HDefine a constant instead of duplicating this literal "gameURL" 3 times.(Æúà©8°î‹Ñ1
+E
+java:S1604O"(Make this anonymous inner class a lambda(„ÑñŒ8°î‹Ñ1
+E
+java:S1604@"(Make this anonymous inner class a lambda(ÑÂğ8±î‹Ñ1
+D
+java:S1604c"(Make this anonymous inner class a lambda(–§º8±î‹Ñ1
+s
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Ãá‡ıÿÿÿÿ8îêûŒÑ1
+s	java:S116!"RRename this field "MyPrefs" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¨¼£şÿÿÿÿ8îêûŒÑ1
+T
+java:S1874("7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(’©Ê8¬ëûŒÑ1
+Y
+java:S1874)"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.(øÒÁûÿÿÿÿ8İî‹Ñ1
+X
+java:S2696C"6Make the enclosing method "static" or remove this set.(˜‘öóùÿÿÿÿ8æî‹Ñ1
+S
+java:S2696H"6Make the enclosing method "static" or remove this set.(“´åÍ8çî‹Ñ1
+S
+java:S2696I"6Make the enclosing method "static" or remove this set.(Æúà©8³ëûŒÑ1
+L
+java:S1874O"/Remove this use of "Handler"; it is deprecated.(„ÑñŒ8ëî‹Ñ1

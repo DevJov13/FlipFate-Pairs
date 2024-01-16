@@ -19,3 +19,43 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+
+# Specify the fully qualified class name to the JavaScript interface
+# class:
+
+
+# Default ProGuard Rules
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
+-keepattributes Signature
+-keepattributes SetJavaScriptEnabled
+
+-keep class com.google.android.gms.** { *; }
+
+
+-keep class com.google.android.gms.common.ConnectionResult** {
+   int SUCCESS;
+}
+
+-keep class com.appsflyer.** { *; }
+-keep class com.android.installreferrer.** { *; }
+
+-keep class com.google.android.gms.measurement.** { *; }
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient* {
+   com.google.android.gms.ads.identifier.AdvertisingIdClient$Info* getAdvertisingIdInfo(android.content.Context);
+}
+
+-keep public class * extends android.app.Application
+
+-keep class com.appsflyer.**$InstallReceiver { *; }
+-keep class com.appsflyer.**$referrer { *; }
+-keep class com.appsflyer.**$FirebaseMessagingService { *; }
+-keep class com.appsflyer.**AppsFlyerLib
+
+-keep class com.appsflyer.** { *; }
+
+-keepclassmembers class * {
+    @com.appsflyer.*
+    <methods>;
+}
