@@ -56,6 +56,11 @@
         android:theme="@style/Theme.FlipFatePairs"
         tools:targetApi="31">
 
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9426884596605370~9064682203"/>
+
         <activity
             android:name="WebAct"
             android:exported="false" />
@@ -68,7 +73,8 @@
             android:exported="false" />
         <activity
             android:name=".MainContent"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoadingScreen"
             android:exported="true">

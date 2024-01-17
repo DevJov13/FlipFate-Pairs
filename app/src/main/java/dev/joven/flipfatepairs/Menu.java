@@ -53,7 +53,7 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Start the MainContent activity
-                finishAffinity();
+                finish();
             }
         });
     }

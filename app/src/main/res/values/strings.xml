@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FlipFate Pairs</string>
     <string name="web_access_for_html_game">Web Access for HTML Game</string>
+
+    <string name="ads">ca-app-pub-9426884596605370~9064682203</string>
+    <string name="ads_int">ca-app-pub-9426884596605370/6088570043</string>
 </resources>

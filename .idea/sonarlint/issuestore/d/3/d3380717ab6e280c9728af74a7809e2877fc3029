@@ -1,48 +1,22 @@
 
 K
-java:S3740M"/Provide the parametrized type for this generic.(×´°c8µÁ©Ñ1
+java:S3740L"/Provide the parametrized type for this generic.(×´°c8µÁ©Ñ1
 K
-java:S3740\"/Provide the parametrized type for this generic.(×´°c8µÁ©Ñ1
+java:S3740["/Provide the parametrized type for this generic.(×´°c8µÁ©Ñ1
 {
-java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆûÛÊûÿÿÿÿ8¶Á©Ñ1
+java:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆûÛÊûÿÿÿÿ8¶Á©Ñ1
 \
-java:S1118$":Add a private constructor to hide the implicit public one.(ë¶‰—şÿÿÿÿ8ûÂ©Ñ1
-]	java:S125:"<This block of commented-out lines of code should be removed.(òšÏßúÿÿÿÿ8ÊÌ“Ñ1
+java:S1118#":Add a private constructor to hide the implicit public one.(ë¶‰—şÿÿÿÿ8ûÂ©Ñ1
+]	java:S1259"<This block of commented-out lines of code should be removed.(òšÏßúÿÿÿÿ8ÊÌ“Ñ1
 o
-java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÈÀ¥ğ8ŠÃ©Ñ1
-E	java:S108V")Either remove or fill this block of code.(”ı¾8šÄ©Ñ1
-E	java:S108l")Either remove or fill this block of code.(”ı¾8ŸÄ©Ñ1
-L
-java:S1128"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8 Ä©Ñ1
-J
-java:S1128".Remove this unused import 'android.os.Looper'.(âå8 Ä©Ñ1
-T
-java:S1128"7Remove this unused import 'com.android.volley.Request'.(Å½ä8óµ•Ñ1
-Y
-java:S1128"<Remove this unused import 'com.android.volley.RequestQueue'.(¹şÌ×8óµ•Ñ1
+java:S3776?"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÈÀ¥ğ8ŠÃ©Ñ1
+E	java:S108U")Either remove or fill this block of code.(”ı¾8šÄ©Ñ1
+E	java:S108k")Either remove or fill this block of code.(”ı¾8ŸÄ©Ñ1
 U
-java:S1128"8Remove this unused import 'com.android.volley.Response'.(ˆïƒ 8óµ•Ñ1
-X
-java:S1128";Remove this unused import 'com.android.volley.VolleyError'.(­°Ñ”8ôµ•Ñ1
-f
-java:S1128"IRemove this unused import 'com.android.volley.toolbox.JsonObjectRequest'.(Ã¦¿¾8ôµ•Ñ1
-[
-java:S1128">Remove this unused import 'com.android.volley.toolbox.Volley'.(¢‰Ò¶8ôµ•Ñ1
-P
-java:S1128"3Remove this unused import 'com.appsflyer.AFLogger'.(ïóì8ŞÌ“Ñ1
-U
-java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8¡Ä©Ñ1
-R
-java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üşÿÿÿÿ8¡Ä©Ñ1
-K
-java:S1128 ".Remove this unused import 'java.util.Objects'.(¼¸õ›8¡Ä©Ñ1
-q
-java:S1128""TRemove this unnecessary import: same package classes are always implicitly imported.(¬·ÌÃ8Ş©Ñ1
-U
-java:S1068("3Remove this unused "SPLASH_TIME_OUT" private field.(Ô±Ã¶ûÿÿÿÿ8¡Ä©Ñ1
+java:S1068'"3Remove this unused "SPLASH_TIME_OUT" private field.(Ô±Ã¶ûÿÿÿÿ8¡Ä©Ñ1
 M
-java:S1068)"+Remove this unused "gameURL" private field.(ã•ùáúÿÿÿÿ8¡Ä©Ñ1
+java:S1068("+Remove this unused "gameURL" private field.(ã•ùáúÿÿÿÿ8¡Ä©Ñ1
 J
-java:S1068*"-Remove this unused "appStatus" private field.(ˆ²Å„8£Ä©Ñ1
+java:S1068)"-Remove this unused "appStatus" private field.(ˆ²Å„8£Ä©Ñ1
 Q
-java:S1068+"/Remove this unused "apiResponse" private field.(¦½è¹ÿÿÿÿÿ8£Ä©Ñ1
+java:S1068*"/Remove this unused "apiResponse" private field.(¦½è¹ÿÿÿÿÿ8£Ä©Ñ1

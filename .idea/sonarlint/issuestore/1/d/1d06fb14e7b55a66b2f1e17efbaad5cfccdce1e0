@@ -1,0 +1,12 @@
+
+J
+java:S1604"(Make this anonymous inner class a lambda(Îôúæûÿÿÿÿ8¼®ä´Ñ1
+J
+java:S16044"(Make this anonymous inner class a lambda(‹ª‚ğùÿÿÿÿ8ÙÄ°Ñ1
+E
+java:S1604K"(Make this anonymous inner class a lambda(Õä8°“À°Ñ1
+s
+java:S1450"VRemove the "mAdView" field and declare it as a local variable in the relevant methods.(­üêª8­³å´Ñ1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Èø©óùÿÿÿÿ8ß®ä´Ñ1
+]	java:S1258"<This block of commented-out lines of code should be removed.(ÉÀ“èøÿÿÿÿ8Š»Å°Ñ1
